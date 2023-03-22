@@ -3,7 +3,7 @@ name: Java CI with Maven
 on: [push, pull_request]
 
 jobs:
-build:
+  build:
 runs-on: ubuntu-latest
 
 steps:
@@ -12,6 +12,6 @@ steps:
 uses: actions/setup-java@v2
 with:
 java-version: '11'
-distributons: 'abort'
+distributions: 'abort'
 - name: Build with Maven
 run: mvn -B -e verify
